@@ -43,6 +43,29 @@ next, you need to add `snipository` to your plugins list in your `.zshrc` file:
 ```shellscript
 plugins=(... snipository)
 ```
-
 Then, restart your ZSH shell to use snipository.
 
+## Usage
+before first run, you might want to add the local data file:
+```shellscript
+mkdir -p ~/.config/snipository && touch ~/.config/snipository/snipository_data.json
+```
+
+### help command:
+```shellscript
+snipository --help
+```
+
+### add command:
+```shellscript
+snipository push-latest <COMMAND NAME>
+```
+this will add the latest command from history to the snipository.
+
+### get command:
+```shellscript
+snipository get-snip <COMMAND NAME>
+```
+this will copy the command to your clipboard.
+notice, that the completion in this app works for all the data, so you can use the `TAB` key to complete the command name, 
+or switch between the commands using the `TAB` key.
