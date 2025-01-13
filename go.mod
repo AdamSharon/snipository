@@ -1,11 +1,11 @@
 module snipository
 
-go 1.21
+go 1.23
 
 require (
 	github.com/atotto/clipboard v0.1.4
 	github.com/lithammer/fuzzysearch v1.1.8
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.1
 )
 
 require (
