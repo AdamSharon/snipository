@@ -43,6 +43,12 @@ next, you need to add `snipository` to your plugins list in your `.zshrc` file:
 ```shellscript
 plugins=(... snipository)
 ```
+
+in order to make auto-completion work, you need to add the following line to your `.zshrc` file:
+```shellscript
+source <(snipository completion zsh)
+```
+
 Then, restart your ZSH shell to use snipository.
 
 ## Usage
