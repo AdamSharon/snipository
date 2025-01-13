@@ -40,6 +40,7 @@ func newRootCmd() *cobra.Command {
 	cmd.AddCommand(newSnipositoryCommand())
 	cmd.AddCommand(zshCompletionCommand())
 	cmd.AddCommand(pushLatestCommand())
+	cmd.AddCommand(getSaveFile())
 
 	return cmd
 }
